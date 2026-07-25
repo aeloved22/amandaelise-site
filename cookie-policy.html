@@ -7,12 +7,21 @@
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px; color: #222; line-height: 1.6; }
 h1 { font-size: 1.8em; }
-a { color: #2563eb; }
-footer { margin-top: 40px; font-size: 0.85em; color: #777; }
+a { color: #1d4ed8; }
+a:focus { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+footer { margin-top: 40px; font-size: 0.85em; color: #555; }
+.skip-link { position: absolute; left: -9999px; top: 0; background: #fff; color: #1d4ed8; padding: 8px 16px; z-index: 100; }
+.skip-link:focus { left: 10px; top: 10px; }
+footer nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px 10px; }
+footer nav li { display: inline; }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
 <h1>Cookie Policy</h1>
+</header>
+<main id="main">
 <p>Last updated: July 25, 2026</p>
 <p>This website may use minimal essential cookies required for basic site functionality. We do not use cookies for advertising or tracking purposes.</p>
 <h2>What Are Cookies</h2>
@@ -21,6 +30,16 @@ footer { margin-top: 40px; font-size: 0.85em; color: #777; }
 <p>You can control or delete cookies at any time through your browser settings.</p>
 <h2>Contact Us</h2>
 <p>Questions about this Cookie Policy can be sent to <a href="mailto:amanda@amandaelise.com">amanda@amandaelise.com</a>.</p>
-<footer><a href="/">Home</a> &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="/cookie-policy.html">Cookie Policy</a></footer>
+</main>
+<footer>
+<nav aria-label="Footer">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/privacy-policy.html">Privacy Policy</a></li>
+<li><a href="/cookie-policy.html">Cookie Policy</a></li>
+<li><a href="/accessibility.html">Accessibility</a></li>
+</ul>
+</nav>
+</footer>
 </body>
 </html>
